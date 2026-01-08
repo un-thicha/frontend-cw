@@ -123,7 +123,7 @@ onMounted(() => {
 
 <template>
 	<div class="container">
-		<h1>CRUD Playground for se67023064 </h1>
+		<h1>CRUD Playground for SE67023064</h1>
 
 		<section class="card">
 			<h2 @click="showList = !showList" style="cursor:pointer">List items <small>click to toggle</small></h2>
