@@ -123,7 +123,7 @@ onMounted(() => {
 
 <template>
 	<div class="container">
-		<h1>CRUD Playground</h1>
+		<h1>CRUD Playground for se67023064</h1>
 
 		<section class="card">
 			<h2 @click="showList = !showList" style="cursor:pointer">List items <small>click to toggle</small></h2>
@@ -134,7 +134,13 @@ onMounted(() => {
 				</div>
 				<table class="items">
 					<thead>
-						<tr><th>id</th><th>title</th><th>description</th><th>created_at</th><th>updated_at</th></tr>
+						<tr>
+							<th>id</th>
+							<th>title</th>
+							<th>description</th>
+							<th>created_at</th>
+							<th>updated_at</th>
+						</tr>
 					</thead>
 					<tbody>
 						<tr v-for="it in items" :key="it.id">
@@ -193,15 +199,70 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.container{max-width:900px;margin:20px auto;font-family:system-ui,Segoe UI,Roboto,Arial}
-.muted{color:#666;font-size:0.9rem}
-.card{border:1px solid #e2e8f0;padding:12px;border-radius:6px;margin-bottom:12px}
-.row{display:flex;gap:8px;align-items:center;margin-top:8px}
-input,select{padding:6px 8px;border:1px solid #cbd5e1;border-radius:4px}
-button{padding:6px 10px;border-radius:4px;border:1px solid #94a3b8;background:#f8fafc;cursor:pointer}
-.items{width:100%;border-collapse:collapse;margin-top:8px}
-.items th,.items td{border:1px solid #e2e8f0;padding:6px;text-align:left}
-.status{margin-top:10px;color:#0f172a}
-h1{margin-bottom:4px}
-h2{margin:0;font-size:1.05rem}
+.container {
+	max-width: 900px;
+	margin: 20px auto;
+	font-family: system-ui, Segoe UI, Roboto, Arial
+}
+
+.muted {
+	color: #666;
+	font-size: 0.9rem
+}
+
+.card {
+	border: 1px solid #e2e8f0;
+	padding: 12px;
+	border-radius: 6px;
+	margin-bottom: 12px
+}
+
+.row {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	margin-top: 8px
+}
+
+input,
+select {
+	padding: 6px 8px;
+	border: 1px solid #cbd5e1;
+	border-radius: 4px
+}
+
+button {
+	padding: 6px 10px;
+	border-radius: 4px;
+	border: 1px solid #94a3b8;
+	background: #f8fafc;
+	cursor: pointer
+}
+
+.items {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 8px
+}
+
+.items th,
+.items td {
+	border: 1px solid #e2e8f0;
+	padding: 6px;
+	text-align: left
+}
+
+.status {
+	margin-top: 10px;
+	color: #0f172a
+}
+
+h1 {
+	margin-bottom: 4px
+}
+
+h2 {
+	margin: 0;
+	font-size: 1.05rem
+}
 </style>
